@@ -1,0 +1,75 @@
+/* Style for Jeopardy board */
+.jeopardy-board {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.category-row {
+    display: flex;
+}
+
+.category-cell {
+    flex: 1;
+    padding: 10px;
+    background-color: #c2d3ff;
+    color: #000;
+}
+
+.category-title {
+    text-align: center;
+}
+
+.question-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.question {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    margin-top: 5px;
+}
+
+/* Style for question modal */
+.question-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.question-content {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.question-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.answer-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Other styles as needed */

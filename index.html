@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jeopardy Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="jeopardy-board">
+    <div class="category-row">
+        <div class="category-cell">
+            <h2 class="category-title">Category 1</h2>
+            <div class="question-cell">
+                <div class="question" onclick="showQuestion(1, 1)">100</div>
+                <div class="question" onclick="showQuestion(1, 2)">200</div>
+                <div class="question" onclick="showQuestion(1, 3)">300</div>
+                <div class="question" onclick="showQuestion(1, 4)">400</div>
+            </div>
+        </div>
+        <div class="category-cell">
+            <h2 class="category-title">Category 2</h2>
+            <div class="question-cell">
+                <div class="question" onclick="showQuestion(2, 1)">100</div>
+                <div class="question" onclick="showQuestion(2, 2)">200</div>
+                <div class="question" onclick="showQuestion(2, 3)">300</div>
+                <div class="question" onclick="showQuestion(2, 4)">400</div>
+            </div>
+        </div>
+        <div class="category-cell">
+            <h2 class="category-title">Category 3</h2>
+            <div class="question-cell">
+                <div class="question" onclick="showQuestion(3, 1)">100</div>
+                <div class="question" onclick="showQuestion(3, 2)">200</div>
+                <div class="question" onclick="showQuestion(3, 3)">300</div>
+                <div class="question" onclick="showQuestion(3, 4)">400</div>
+            </div>
+        </div>
+        <div class="category-cell">
+            <h2 class="category-title">Category 4</h2>
+            <div class="question-cell">
+                <div class="question" onclick="showQuestion(4, 1)">100</div>
+                <div class="question" onclick="showQuestion(4, 2)">200</div>
+                <div class="question" onclick="showQuestion(4, 3)">300</div>
+                <div class="question" onclick="showQuestion(4, 4)">400</div>
+            </div>
+        </div>
+        <!-- Repeat for other categories -->
+    </div>
+</div>
+<div class="question-modal" id="questionModal">
+    <div class="question-content">
+        <div class="question-text" id="questionText"></div>
+        <input type="text" class="answer-input" id="answerInput" placeholder="Enter your answer">
+        <button onclick="checkAnswer()">Submit</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
